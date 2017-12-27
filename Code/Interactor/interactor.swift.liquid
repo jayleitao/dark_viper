@@ -6,7 +6,7 @@
 //  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
 //
 
-class {{ module_info.name }}Interactor: {{ module_info.name }}InteractorInput, RequestHandlerInput {
+class {{ module_info.name }}Interactor: {{ module_info.name }}InteractorInput, {{ module_info.name }}RequestHandlerInput {
 
     weak var output: {{ module_info.name }}InteractorOutput!
     weak var requestHandlerOutput: {{ module_info.name }}RequestHandlerOutput!

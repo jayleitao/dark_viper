@@ -7,9 +7,9 @@ license: MIT
 
 code_files:
 # View layer
-- {name: View/ViewInput.swift,  path: View/view_input.swift.liquid}
-- {name: View/ViewOutput.swift, path: View/view_output.swift.liquid}
-- {name: View/ViewController.swift, path: View/viewcontroller.swift.liquid}
+- {name: View/ViewInput.swift,  path: Code/View/view_input.swift.liquid}
+- {name: View/ViewOutput.swift, path: Code/View/view_output.swift.liquid}
+- {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
 
 # Presenter layer
 - {name: Presenter/ModuleInput.swift, path: Code/Presenter/module_input.swift.liquid}
@@ -29,9 +29,9 @@ code_files:
 - {name: Konfigurator/Initializer.swift, path: Code/Konfigurator/initializer.swift.liquid}
 
 # Data Store layer
-- {name: DataStore/DataStoreInput.swift, path: Code/Interactor/dataStore_input.swift.liquid}
-- {name: DataStore/DataStoreOutput.swift, path: Code/Interactor/dataStore_output.swift.liquid}
-- {name: DataStore/DataStore.swift, path: Code/Interactor/dataStore.swift.liquid}
+- {name: DataStore/DataStoreInput.swift, path: Code/DataStore/dataStore_input.swift.liquid}
+- {name: DataStore/DataStoreOutput.swift, path: Code/DataStore/dataStore_output.swift.liquid}
+- {name: DataStore/DataStore.swift, path: Code/DataStore/dataStore.swift.liquid}
 
 # API Requester layer
 - {name: APIRequester/APIRequesterInput.swift, path: Code/APIRequester/apiRequester_input.swift.liquid}
@@ -72,6 +72,4 @@ test_files:
 # Request Handler tests
 - {name: RequestHandler/RequestHandler.swift, path: Tests/RequestHandler/requestHandler_tests.swift.liquid}
 
-# Template dependencies
-dependencies:
-- Alamofire
+

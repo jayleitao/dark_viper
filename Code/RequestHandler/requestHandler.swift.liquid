@@ -1,0 +1,15 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+class {{ module_info.name }}RequestHandler: {{ module_info.name }}RequestHandlerInput, {{ module_info.name }}APIRequesterInput, {{ module_info.name }}DataStoreInput {
+
+    weak var output: {{ module_info.name }}RequestHandlerOutput!
+    weak var apiRequestorInput: {{ module_info.name }}APIRequesterOutput!
+    weak var dataStoreInput: {{ module_info.name }}DataStoreOutput!
+
+}
