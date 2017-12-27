@@ -30,8 +30,8 @@ class {{ module_info.name }}ModuleConfigurator {
         let interactor = {{ module_info.name }}Interactor()
         interactor.output = presenter
 
-        requestHandler.output = interactor
-        interactor.requestHandlerOutput = requestHandler
+        requestHandler.output = interactor.requestHandlerOutput
+        interactor.requestHandlerOutput = requestHandler.output
         presenter.interactor = interactor
         viewController.output = presenter
     }
