@@ -10,13 +10,13 @@ import UIKit
 
 class {{ module_info.name }}ModuleInitializer: NSObject {
 
-    //Connect with object on storyboard
-    @IBOutlet weak var {{ module_info.name | downcase }}ViewController: {{ module_info.name }}ViewController!
+    var {{ module_info.name | downcase }}ViewController: {{ module_info.name }}ViewController?
+    override init() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        {{ module_info.name | downcase }}ViewController = storyboard.instantiateViewController(withIdentifier: "{{ module_info.name | downcase }}ViewController") as? {{ module_info.name }}ViewController}ViewController
 
-    override func awakeFromNib() {
 
         let configurator = {{ module_info.name }}ModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: {{ module_info.name | downcase }}ViewController)
     }
-
 }

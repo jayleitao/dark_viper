@@ -28,20 +28,24 @@ code_files:
 - {name: Konfigurator/Konfigurator.swift, path: Code/Konfigurator/konfigurator.swift.liquid}
 - {name: Konfigurator/Initializer.swift, path: Code/Konfigurator/initializer.swift.liquid}
 
-# Data Store layer
-- {name: DataStore/DataStoreInput.swift, path: Code/DataStore/dataStore_input.swift.liquid}
-- {name: DataStore/DataStoreOutput.swift, path: Code/DataStore/dataStore_output.swift.liquid}
-- {name: DataStore/DataStore.swift, path: Code/DataStore/dataStore.swift.liquid}
-
-# API Requester layer
-- {name: APIRequester/APIRequesterInput.swift, path: Code/APIRequester/apiRequester_input.swift.liquid}
-- {name: APIRequester/APIRequesterOutput.swift, path: Code/APIRequester/apiRequester_output.swift.liquid}
-- {name: APIRequester/APIRequester.swift, path: Code/APIRequester/apiRequester.swift.liquid}
 
 # Request Handler layer
 - {name: RequestHandler/RequestHandlerInput.swift, path: Code/RequestHandler/requestHandler_input.swift.liquid}
 - {name: RequestHandler/RequestHandlerOutput.swift, path: Code/RequestHandler/requestHandler_output.swift.liquid}
 - {name: RequestHandler/RequestHandler.swift, path: Code/RequestHandler/requestHandler.swift.liquid}
+
+
+# Data Store layer
+- {name: RequestHandler/DataStore/DataStoreInput.swift, path: Code/DataStore/dataStore_input.swift.liquid}
+- {name: RequestHandler/DataStore/DataStoreOutput.swift, path: Code/DataStore/dataStore_output.swift.liquid}
+- {name: RequestHandler/DataStore/DataStore.swift, path: Code/DataStore/dataStore.swift.liquid}
+
+# API Requester layer
+- {name: RequestHandler/APIRequester/APIRequesterInput.swift, path: Code/APIRequester/apiRequester_input.swift.liquid}
+- {name: RequestHandler/APIRequester/APIRequesterOutput.swift, path: Code/APIRequester/apiRequester_output.swift.liquid}
+- {name: RequestHandler/APIRequester/APIRequester.swift, path: Code/APIRequester/apiRequester.swift.liquid}
+
+
 
 
 
