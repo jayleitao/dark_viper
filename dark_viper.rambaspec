@@ -1,0 +1,77 @@
+# Template information section
+name: dark_viper
+summary: This is a tempate to generate files for DARK VIPER architecture.
+author: Jason Leitao
+version: 1.0.0
+license: MIT
+
+code_files:
+# View layer
+- {name: View/ViewInput.swift,  path: View/view_input.swift.liquid}
+- {name: View/ViewOutput.swift, path: View/view_output.swift.liquid}
+- {name: View/ViewController.swift, path: View/viewcontroller.swift.liquid}
+
+# Presenter layer
+- {name: Presenter/ModuleInput.swift, path: Code/Presenter/module_input.swift.liquid}
+- {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
+
+# Interactor layer
+- {name: Interactor/InteractorInput.swift, path: Code/Interactor/interactor_input.swift.liquid}
+- {name: Interactor/InteractorOutput.swift, path: Code/Interactor/interactor_output.swift.liquid}
+- {name: Interactor/Interactor.swift, path: Code/Interactor/interactor.swift.liquid}
+
+# Router layer
+- {name: Router/RouterInput.swift, path: Code/Router/router_input.swift.liquid}
+- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
+
+# Konfigurator
+- {name: Konfigurator/Konfigurator.swift, path: Code/Konfigurator/konfigurator.swift.liquid}
+- {name: Konfigurator/Initializer.swift, path: Code/Konfigurator/initializer.swift.liquid}
+
+# Data Store layer
+- {name: DataStore/DataStoreInput.swift, path: Code/Interactor/dataStore_input.swift.liquid}
+- {name: DataStore/DataStoreOutput.swift, path: Code/Interactor/dataStore_output.swift.liquid}
+- {name: DataStore/DataStore.swift, path: Code/Interactor/dataStore.swift.liquid}
+
+# API Requester layer
+- {name: APIRequester/APIRequesterInput.swift, path: Code/APIRequester/apiRequester_input.swift.liquid}
+- {name: APIRequester/APIRequesterOutput.swift, path: Code/APIRequester/apiRequester_output.swift.liquid}
+- {name: APIRequester/APIRequester.swift, path: Code/APIRequester/apiRequester.swift.liquid}
+
+# Request Handler layer
+- {name: RequestHandler/RequestHandlerInput.swift, path: Code/RequestHandler/requestHandler_input.swift.liquid}
+- {name: RequestHandler/RequestHandlerOutput.swift, path: Code/RequestHandler/requestHandler_output.swift.liquid}
+- {name: RequestHandler/RequestHandler.swift, path: Code/RequestHandler/requestHandler.swift.liquid}
+
+
+
+# The declarations for test files
+test_files:
+
+# Konfigurators tests
+- {name: Konfigurator/KonfiguratorTests.swift, path: Tests/Konfigurator/konfigurator_tests.swift.liquid}
+
+# View tests
+- {name: View/ViewTests.swift, path: Tests/View/view_tests.swift.liquid}
+
+# Interactor tests
+- {name: Interactor/InteractorTests.swift, path: Tests/Interactor/interactor_tests.swift.liquid}
+
+# Presenter tests
+- {name: Presenter/PresenterTests.swift, path: Tests/Presenter/presenter_tests.swift.liquid}
+
+# Router tests
+- {name: Router/RouterTests.swift, path: Tests/Router/router_tests.swift.liquid}
+
+# API Requester tests
+- {name: APIRequester/APIRequester.swift, path: Tests/APIRequester/apiRequester_tests.swift.liquid}
+
+# Data Store tests
+- {name: DataStore/DataStore.swift, path: Tests/DataStore/dataStore_tests.swift.liquid}
+
+# Request Handler tests
+- {name: RequestHandler/RequestHandler.swift, path: Tests/RequestHandler/requestHandler_tests.swift.liquid}
+
+# Template dependencies
+dependencies:
+- Alamofire
