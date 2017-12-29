@@ -10,13 +10,10 @@ import UIKit
 
 class {{ module_info.name }}ModuleInitializer: NSObject {
 
-    var {{ module_info.name | downcase }}ViewController: {{ module_info.name }}ViewController?
+    var konfigurator:{{ module_info.name }}ModuleConfigurator?
     override init() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        {{ module_info.name | downcase }}ViewController = storyboard.instantiateViewController(withIdentifier: "{{ module_info.name | downcase }}ViewController") as? {{ module_info.name }}ViewController}ViewController
 
-
-        let configurator = {{ module_info.name }}ModuleConfigurator()
-        configurator.configureModuleForViewInput(viewInput: {{ module_info.name | downcase }}ViewController)
+        konfigurator = {{ module_info.name }}ModuleConfigurator()
+        konfigurator.configureModuleForViewInputs(viewInputs: [konfigurator?.{{ module_info.name | downcase }}ViewController])
     }
 }
